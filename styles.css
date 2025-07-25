@@ -21,7 +21,7 @@ End logo */
 	display: flex;
 	justify-content: flex-end;
 	position: fixed;
-	top: 0;
+	top: 15px;
 	left: 0;
 }
 

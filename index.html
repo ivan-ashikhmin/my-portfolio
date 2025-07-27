@@ -18,7 +18,7 @@
 	<body>
 		<!-- START NAV -->
 
-		<header>				
+		<header>
 			<nav id="navbar">
 				<ul class="nav-list">
 					<li>
@@ -38,8 +38,9 @@
 
 			<!--START WELCOME SECTION -->
 		<section id="welcome-section" class="welcome-section">
-			<h1>Добро Пожаловать! Меня зовут Иван! Это моя страничка портфолио.</h1>
-				<p>дружелюбный программист</p>
+			<h1>Добро Пожаловать <em>& Welcome!</em></h1>
+			<h2>Меня зовут Иван и это моя вебстраничка портфолио которая дополняется и обновляется, так что пусть её мрачный вид Вас не пугает!</h2>
+				<p>(дружелюбный программист)</p>
 		</section>
 
 			<!--END WELCOME SECTION -->
@@ -49,59 +50,109 @@
 		<section id="projects" class="projects-section">
 			<h2 class="projects-section-header">My HTML/CSS CodeCamp Course Excercises</h2>
 		<div class="projects-grid">
-			<a class="project project-tile"
-					href="https://codepen.io/ivan-wedsa/pen/ZEvJwEN"
-			target="_blank"
-			/>
+
+					<a class="project project-tile"
+						href="https://ivan-ashikhmin.github.io/chinese-philosophy-quote-machine/"
+						target="_blank"
+					/>
+
+						<p class="project-title">
+							Проект Github 1. "My Chinese Philosophy Quote Machine"
+						</p>
+						<!--START PROJECT 2 SECTION -->
+					<a class="project project-tile"
+						href="https://ivan-ashikhmin.github.io/travel-agency-page/"
+						target="_blank"
+					/>
+
+						<p class="project-title">
+							Проект Github 2. "Откройте для себя Италию"
+						</p>
+						<!--END PROJECT 2 SECTION -->
+
+						<!--START PROJECT 3 SECTION -->
+						<a class="project project-tile"
+							href=""
+							target="_blank"
+						/>
+
+							<p class="project-title">
+								Проект Github 3. "Меню кафе. Basic CSS Cafe Menu"
+							</p>
+						<!--END PROJECT 3 SECTION -->
+
+						<!--START PROJECT 4 SECTION -->
+						<a class="project project-tile"
+							href="https://ivan-ashikhmin.github.io/Counter-app-by-Ivan-Ashikhmin/"
+							target="_blank"
+						/>
+
+							<p class="project-title">
+								Проект Github 4. "Приложение-счетчик. Counter App."
+							</p>
+						<!--END PROJECT 4 SECTION -->
+
+						<!--START PROJECT 5 SECTION -->
+						<a class="project project-tile"
+							href="https://ivan-ashikhmin.github.io/Chocolate-chip-cookies/"
+							target="_blank"
+						/>
+
+							<p class="project-title">
+								Проект Github 5. "Рецепт печенья с шоколадной крошкой. Chocolate chip cookies recipe."
+							</p>
+						<!--END PROJECT 5 SECTION -->
+
+						<!--START PROJECT X SECTION -->
+						<!--XXXXXXXXXXXXXXXXXXXXXXX -->
+						<!--END PROJECT X SECTION -->
+
+				<a class="project project-tile"
+				href="https://codepen.io/ivan-wedsa/pen/ZEvJwEN"
+				target="_blank"
+				/>
 
 					<p class="project-title">
-						Проект 1. "My Survey Form for Mobile Phone Purchase"
+						Проект Codepen 1. "My Survey Form for Mobile Phone Purchase"
 					</p>
 
 				<a class="project project-tile"
 				href="https://codepen.io/ivan-wedsa/pen/VwrjvBP"
-				target="_blank" 
+				target="_blank"
 				/>
 
 					<p class="project-title">
-					Проект 2. "My Tribute Page HTML Lake Baikal"
+					Проект Codepen 2. "My Tribute Page HTML Lake Baikal"
 					</p>
 
 				<a class="project project-tile"
 					href="https://codepen.io/ivan-wedsa/details/qBYJwxW"
-					target="_blank" 
+					target="_blank"
 				/>
 
 					<p class="project-title">
-						Проект 3. "My Technical Documentation Page for Capitals by Population"
+						Проект Codepen 3. "My Technical Documentation Page for Capitals by Population"
 					</p>
 
 				<a class="project project-tile"
 					href="https://codepen.io/ivan-wedsa/pen/yLvEejb"
-					target="_blank" 
+					target="_blank"
 				/>
 
 					<p class="project-title">
-						Проект 4. "My Product Landing Page for Rubik's Cubes"
+						Проект Codepen 4. "My Product Landing Page for Rubik's Cubes"
 					</p>
 
-				<a class="project project-tile"
-					href="https://ivan-ashikhmin.github.io/chinese-philosophy-quote-machine/"
-					target="_blank" 
-				/>
+					<!--START PROJECT 0 SECTION -->
+					<a class="project project-tile"
+							href="https://ivan-ashikhmin.github.io/my-html-notes/"
+					target="_blank"
+					/>
+							<p class="project-title">
+								Проект Github 0. "My basic html notes."
+							</p>
+					<!--END PROJECT 0 SECTION -->
 
-					<p class="project-title">
-						Проект 5. "My Chinese Philosophy Quote Machine"
-					</p>
-
-				<a class="project project-tile"
-					href="https://ivan-ashikhmin.github.io/travel-agency-page/"
-					target="_blank" 
-				/>
-
-					<p class="project-title">
-						Проект 6. "Откройте для себя Италию"
-					</p>
 		</div>
 			<div>
 				<a class="btn btn-show-all" href="https://codepen.io/ivan-wedsa/pens/public"
@@ -147,8 +198,28 @@
 				</p>
 			</footer>
 		<!-- END FOOTER SECTION -->
-		<div class="floating-button-div">
-			<a href="#"><button id="fb" class="fb"><span>&#11161;</span></button></a> <!-- link that helps jump to the top of the page -->
-		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Вверх</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 	</body>
 </html>

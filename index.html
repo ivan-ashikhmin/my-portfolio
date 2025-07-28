@@ -15,22 +15,27 @@
 	</head>
 
 	<body>
+
+		<!-- Note -->
+		<div style="background:yellow;padding:5px">
+		  <h4 style="text-align:center">Страница дополняется и обновляется. Следите за обновлениями.. :)</h4>
+		</div>
+
 		<!-- START NAV -->
-		<header>
-			<nav id="navbar">
-				<ul class="nav-list">
-					<li>
-						<a href="#welcome-section">Обо мне</a>
-					</li>
-					<li>
-						<a href="#projects">Мои проекты</a>
-					</li>
-					<li>
-						<a href="#contact">Мои контакты</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+
+		<nav id="navbar">
+			<ul class="nav-list">
+				<li>
+					<a href="#welcome-section">Обо мне</a>
+				</li>
+				<li>
+					<a href="#projects">Мои проекты</a>
+				</li>
+				<li>
+					<a href="#contact">Мои контакты</a>
+				</li>
+			</ul>
+		</nav>
 
 			<!-- END NAV -->
 
@@ -46,16 +51,16 @@
 			<!--START PROJECT SECTION -->
 
 		<section id="projects" class="projects-section">
-			<h2 class="projects-section-header">Мои HTML/CSS/JavaScript - My HTML/CSS/JavaScript Excercises</h2>
+			<h2 class="projects-section-header">Моя мастерская HTML/CSS/JavaScript - My HTML/CSS/JavaScript Workshop</h2>
 		<div class="projects-grid">
 
 						<!--START PROJECT SECTION -->
 					<a class="project project-tile"
-						href=""
+						href="https://ivan-ashikhmin.github.io/survey-form/"
 						target="_top"
 					/>
-						<p class="project-title" style="color: darkred; text-decoration: line-through;">
-							*Проект "Форма опроса - Survey Form"
+						<p class="project-title">
+							Проект "Формуляр опроса - Survey Form for an Iphone models"
 						</p>
 						<!--END PROJECT SECTION -->
 
@@ -88,7 +93,7 @@
 							Проект "Моя китайская философская цитатная машина - My Chinese Philosophy Quote Machine"
 						</p>
 						<!--END PROJECT SECTION -->
-						
+
 						<!--START PROJECT SECTION -->
 					<a class="project project-tile"
 						href="https://ivan-ashikhmin.github.io/travel-agency-page/"
@@ -132,7 +137,7 @@
 							Проект "Рецепт печенья с шоколадной крошкой - Chocolate chip cookies recipe"
 						</p>
 						<!--END PROJECT SECTION -->
-				
+
 						<!--START PROJECT SECTION -->
 					<a class="project project-tile"
 							href="https://ivan-ashikhmin.github.io/my-html-notes/"
@@ -194,11 +199,11 @@
     // Get the button
     let mybutton = document.getElementById("myBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
+    // When the user scrolls down 30px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         mybutton.style.display = "block";
       } else {
         mybutton.style.display = "none";

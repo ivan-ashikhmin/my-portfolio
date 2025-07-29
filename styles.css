@@ -45,14 +45,24 @@ html {
 
 /*End html style behaviour */
 
-h1,
+h1 {
+	font-family: 'Arial', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	color: white;
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 h2 {
 	font-family: 'Arial', sans-serif;
 	font-weight: 900;
 	text-align: center;
-}
-
-h2 {
+	color: white;
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	font-size: 2rem;
 }
 
